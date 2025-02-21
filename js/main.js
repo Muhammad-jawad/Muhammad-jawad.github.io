@@ -135,7 +135,17 @@
             { name: "React JS", icon: "react fa-brand", percentage: 40 }
         ],
         projects: [
-            { name: "Aluminium Online", url: "https://www.aluminium-online.co.uk/", image: 'img/project/aluminium.png'},
+            { name: "Aluminium Online", type: "eCommerce",  url: "https://www.aluminium-online.co.uk/", image: 'img/projects/aluminium-online.png'},
+            { name: "Discover Dolls", type: "eCommerce Marketplace",  url: "https://www.discoverdolls.co.uk/", image: 'img/projects/discover-dolls.png'},
+            { name: "Wobble", type: "Therapist Booking Marketplace",  url: "https://www.getwobble.co.uk/", image: 'img/projects/wobble.png'},
+            { name: "B_RD", type: "Advertorial",  url: "https://www.wearebrd.com/", image: 'img/projects/b_rd.png'},
+            { name: "Paintball Park", type: "eCommerce",  url: "https://www.paintballpark.co.uk/", image: 'img/projects/ppk.png'},
+            { name: "Floor Street", type: "eCommerce",  url: "https://floorstreet.co.uk/", image: 'img/projects/floorstreet.png'},
+            { name: "Star Athelete", type: "eCommerce",  url: "https://www.starathlete.shop/", image: 'img/projects/starathlete.png'},
+            { name: "Pinks & Blues", type: "eCommerce",  url: "https://pinksnbluesapparel.com/", image: 'img/projects/pinksandblue.png'},
+            
+
+
         ]
     };
     
@@ -208,7 +218,7 @@
         const educationContainer = document.querySelector(".portfolio-content");
         if (educationContainer) {
             educationContainer.innerHTML = data.projects.map((project, index) => `
-                <div class="portfolio-item py-5 border-bottom wow fadeInUp" data-wow-delay="${0.1 + index * 0.2}s">
+                <div class="portfolio-item py-3 border-bottom wow fadeInUp" data-wow-delay="${0.1 + index * 0.2}s">
                     <a href="${project.url}" target="_blank">
                         <div class="row g-4 align-items-center">
                             <div class="col-9 col-xl-4">
@@ -219,7 +229,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-6">
-                                <h4 class="text-body">${project.name}</h4>
+                                <h4 class="text-body">${project.type}</h4>
                                 <h1 class="display-6 mb-0">${project.name}</h1>
 
                             </div>

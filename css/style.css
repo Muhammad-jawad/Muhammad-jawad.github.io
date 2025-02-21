@@ -391,6 +391,11 @@
     width: 100%;
     height: 150px;
     object-fit: cover;
+    object-position: top left;
+}
+
+.portfolio-content .portfolio-item:last-child {
+    border-bottom: none !important;
 }
 
 .portfolio-content .portfolio-item .view-img {
@@ -400,7 +405,7 @@
 }
 
 .portfolio-content .portfolio-item .portfolio-img .portfolio-img-inner {
-    visibility: hidden;
+    /* visibility: hidden; */
     transition: 0.5s;
 }
 
